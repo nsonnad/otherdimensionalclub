@@ -5,5 +5,7 @@ url: "https://qz.com/346283"
 description: "An etymological dive into the Lunar New Year."
 publication: "Quartz"
 medium: "text"
+category: ["writing"]
+tags: ["language", "chinese language"]
 external: true
 ---

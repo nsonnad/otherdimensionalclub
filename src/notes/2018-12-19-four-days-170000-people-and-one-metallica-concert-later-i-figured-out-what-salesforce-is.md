@@ -4,6 +4,8 @@ date: "2018-12-19"
 url: "https://qz.com/1500717"
 description: "A gonzo account of the cult of enterprise software."
 publication: "Quartz"
+category: ["writing", "journalism"]
+tags: ["reportage", "technology"]
 medium: "reportage"
 external: true
 ---

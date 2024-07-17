@@ -5,5 +5,7 @@ url: "https://qz.com/480741"
 description: "The genius of the _Stanford Encyclopedia of Philosophy_."
 publication: "Quartz"
 medium: "text"
+category: ["writing"]
+tags: ["internet", "content moderation"]
 external: true
 ---

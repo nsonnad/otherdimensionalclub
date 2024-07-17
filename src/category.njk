@@ -1,0 +1,32 @@
+---
+pagination:
+  data: collections.categorizedPosts
+  size: 1
+  alias: category
+permalink: /{{ category | slug }}/{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber + 1 }}/{% endif %}
+eleventyComputed:
+  title: "{{ category }}"
+---
+<h1>{{ category }}</h1>
+
+<p>Debug: Current category is {{ category }}</p>
+<p>Debug: Number of posts in this category: {{ collections.categorizedPosts[category].length }}</p>
+
+<ul>
+{% set categoryPosts = collections.categorizedPosts[category] | reverse %}
+{% set postslist = categoryPosts %}
+{% for post in postslist %}
+  <li>
+    <a href="{{ post.url | url }}">{{ post.data.title }}</a>
+  </li>
+{% endfor %}
+</ul>
+
+{% if collections.categorizedPosts[category].length > 10 %}
+  {% if pagination.href.next %}
+    <a href="{{ pagination.href.next }}">Next Page</a>
+  {% endif %}
+  {% if pagination.href.previous %}
+    <a href="{{ pagination.href.previous }}">Previous Page</a>
+  {% endif %}
+{% endif %}

@@ -5,5 +5,7 @@ url: "https://qz.com/840661"
 description: "The tragedy of removing the internet's greatest music-piracy website."
 publication: "Quartz"
 medium: "essay"
+category: ["writing"]
+tags: ["internet", "music", "internet culture", "internet piracy"]
 external: true
 ---

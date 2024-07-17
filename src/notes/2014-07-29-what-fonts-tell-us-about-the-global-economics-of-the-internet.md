@@ -5,5 +5,7 @@ url: "https://qz.com/237851"
 description: "Design-as-development."
 publication: "Quartz"
 medium: "text"
+category: ["writing"]
+tags: ["design", "internet"]
 external: true
 ---
