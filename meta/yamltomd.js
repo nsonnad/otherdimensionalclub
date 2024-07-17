@@ -8,7 +8,7 @@ const yamlContent = fs.readFileSync(yamlFilePath, 'utf8');
 const works = yaml.load(yamlContent);
 
 // Directory to save the markdown files
-const outputDir = path.join(__dirname, 'src/notes');
+const outputDir = path.join(__dirname, '../src/notes');
 if (!fs.existsSync(outputDir)) {
   fs.mkdirSync(outputDir, { recursive: true });
 }
@@ -26,7 +26,7 @@ const slugify = (text) => {
 // Convert each work to a markdown file
 works.forEach(work => {
   const frontMatter = {
-    title: work.title,
+    title: work.title.trim(),
     date: new Date(work.date).toISOString().split('T')[0], // Format date as YYYY-MM-DD
     url: work.link,
     description: work.description.trim(), // Remove new line characters
