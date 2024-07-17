@@ -1,0 +1,205 @@
+- title: "Syllabus: Fundamentals of Data Journalism"
+  link: https://docs.google.com/document/d/1XN3rGXZHbP3E7nwQmYgt-Owkpl28DfcOirn9qDEvnzk/edit
+  date: 2023-01-01
+  description: >
+    Syllabus for my most recent section of Fundamentals of Data Journalism at CUNY J-school. This is my own modified version of the original syllabus by Sandeep Junnarkar, the school's Data Journalism director.
+  medium: teaching
+  publication: CUNY
+  tags: [teaching, journalism]
+
+- title: "Discatur: Container 7-11"
+  link: https://discatur.bandcamp.com/album/discatur-live-container-7-11
+  date: 2022-09-06
+  description: >
+    A lightly mixed but otherwise untouched recording of the last hour and a bit of a live, fully improvised set of techno performed by Discuatur—myself and my collaborator Arne Sander—at our party Container 7-11, the world's first convenience rave!
+  medium: music
+  publication: discatur
+  tags: [music, discatur]
+
+- title: "Hukum: A card game"
+  link: https://github.com/nsonnad/hukum
+  date: 2020-06-11
+  description: >
+    An open-source and fully multiplayer implementation of Hukum, an Indian trick-taking card game my father's family has played as long as I can remember. This project is partially a way to play the game, but also an archive of the concept and ruleset. Built with Elixir and Elm.
+  publication: self
+  medium: code
+  tags: [code]
+
+- title: "Because China: How the world's newest superpower is changing everything"
+  link: https://www.youtube.com/watch?v=wRxRcADnpPk
+  date: 2020-01-01
+  description: >
+    On-camera reporting for a video series on how China is reshaping the world. Including stories from Kenya, Malaysia, Zambia, and Brazil.
+  publication: Quartz
+  medium: video
+  tags: [video, Quartz]
+
+- title: >
+    Four days, 170,000 people, and one Metallica concert later, I figured out what Salesforce is
+  link: https://qz.com/1500717
+  date: 2018-12-19
+  description: >
+    A gonzo account of the cult of enterprise software.
+  publication: Quartz
+  medium: reportage
+  tags: [text, Quartz]
+
+- title: >
+    Tea if by sea, cha if by land: Why the world only has two words for tea
+  link: https://qz.com/1176962
+  date: 2018-01-11
+  description: >
+    Etymology reveals a map of early globalization.
+  publication: Quartz
+  medium: Data journalism
+
+- title: Chartbuilder
+  link: https://github.com/Quartz/Chartbuilder
+  date: 2018-01-01
+  description: >
+    Open-source data visualization / charting web app. Aimed at journalists, written in JavaScript/React.
+  publication: Open-source
+  medium: web app
+
+- title: Everything bad about Facebook is bad for the same reason
+  date: 2018-07-30
+  link: https://qz.com/1342757
+  description: >
+    A philosophical analysis of Facebook's fundamental failing.
+  publication: Quartz
+  medium: essay
+
+- title: >
+    Xi Jinping is not the "president" of China
+  date: 2017-11-02
+  link: https://qz.com/1112638
+  description: >
+    Linguistic-political analysis of a frequent mistranslation.
+  publication: Quartz
+  medium: text
+
+- title: >
+    How do you draw a circle? We analyzed 100,000 drawings to show how culture shapes our instincts
+  date: 2017-06-15
+  link: https://qz.com/994486
+  description: >
+    Dove into big Google data with Thu-Huong Ha to reveal a deep cultural preference.
+  publication: Quartz
+  medium: Data journalism
+
+- title: >
+    All the “wellness” products Americans love to buy are sold on both Infowars and Goop
+  date: 2017-06-29
+  link: https://qz.com/1010684
+  description: >
+    I dove into the offerings of both Goop and Infowars and found many similarities.
+  publication: Quartz
+  medium: investigation
+
+- title: >
+    A 103-year-old lexicographer has spent a century thinking about one of India’s oldest languages
+  date: 2017-04-26
+  link: https://qz.com/india/964727
+  description: >
+    Interview with Ganjam Venkatasubbaiah about his long life of studying Kannada.
+  publication: Quartz
+  medium: profile
+
+- title: >
+    Wikipedia’s great experiment: Finding a definition of “happiness” we can all agree on
+  date: 2017-04-18
+  link: https://qz.com/912028
+  description: >
+    I created a tool to quickly compare changes to a Wikipedia page, in this case the one on "Happiness," to see how crowdsourcing deals with humanity's great questions.
+  publication: Quartz
+  medium: philosophical data analysis
+
+- title: >
+    What Steve Bannon really wants
+  date: 2017-02-03
+  link: https://qz.com/898134
+  description: >
+    Shortly after Trump's inauguration, Steve Bannon was the wild card in the Trump administration. Gwynn Guilford and I uncovered his bizarre and epic political philosophy.
+  publication: Quartz
+  medium: text
+
+- title: >
+    A eulogy for What.cd, the greatest music collection in the history of the world—until it vanished
+  date: 2016-11-18
+  link: https://qz.com/840661
+  description: >
+    The tragedy of removing the internet's greatest music-piracy website.
+  publication: Quartz
+  medium: essay
+
+- title: >
+    The great American word mapper
+  date: 2016-12-15
+  link: https://qz.com/862325
+  description: >
+    Interactive web app that allows users to search for any of the top 100,000 words used on Twitter (as of 2016), and see where they are used in the continental US. This project is used by many academics and instructors in linguistics.
+  publication: Quartz
+  medium: Data journalism, graphics
+
+- title: >
+    The long, incredibly tortuous, and fascinating process of creating a Chinese font
+  date: 2015-12-18
+  link: https://qz.com/522079
+  description: >
+    Reporting from Taiwan on an incredible design challenge.
+  publication: Quartz
+  medium: reportage
+
+- title: >
+    This free online encyclopedia has achieved what Wikipedia can only dream of
+  date: 2015-09-21
+  link: https://qz.com/480741
+  description: >
+    The genius of the _Stanford Encyclopedia of Philosophy_.
+  publication: Quartz
+  medium: text
+
+- title: >
+    See where ‘Go Set a Watchman’ overlaps with ‘To Kill a Mockingbird,’ word-for-word
+  date: 2015-07-14
+  link: https://qz.com/452650
+  description: >
+    When Harper Lee's "new" novel came out, Keith Collins and I wanted to know just how new it was.
+  publication: Quartz
+  medium: data analysis
+
+- title: >
+    Happy lunar new year! But is it the year of the sheep or something else?
+  date: 2015-02-20
+  link: https://qz.com/346283
+  description: >
+    An etymological dive into the Lunar New Year.
+  publication: Quartz
+  medium: text
+
+- title: >
+    Hacked emails reveal China’s elaborate and absurd internet propaganda machine
+  date: 2014-12-18
+  link: https://qz.com/311832
+  description: >
+    I spoke to a Chinese hacker who had obtained thousands of emails from a Chinese propaganda department, translated them, and wrote software to analyze them. Then I wrote this piece about what I found.
+  publication: Quartz
+  medium: text and data analysis
+
+- title: >
+    What fonts tell us about the global economics of the internet
+  date: 2014-07-29
+  link: https://qz.com/237851
+  description: >
+    Design-as-development.
+  publication: Quartz
+  medium: text
+
+- title: >
+    Hussain's Journey
+  date: 2013-06-01
+  link: http://tgm-hussainsjourney.patarmstrong.net.au/
+  description: >
+    A collaborative, multimedia presentation of one refugee's journey from Afghanistan to Australia. I was reposnsible for all the mapping stuff.
+  publication: The Global Mail
+  medium: multi
