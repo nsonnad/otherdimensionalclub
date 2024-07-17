@@ -1,0 +1,1 @@
+- Link explaining how to paginate tag pages: https://desmondrivet.com/2022/03/23/eleventy-pagination

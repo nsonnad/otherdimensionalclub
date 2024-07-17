@@ -3,30 +3,21 @@ pagination:
   data: collections.categorizedPosts
   size: 1
   alias: category
-permalink: /{{ category | slug }}/{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber + 1 }}/{% endif %}
-eleventyComputed:
-  title: "{{ category }}"
+permalink: /{{ category | slugify }}/
 ---
+
 <h1>{{ category }}</h1>
 
-<p>Debug: Current category is {{ category }}</p>
-<p>Debug: Number of posts in this category: {{ collections.categorizedPosts[category].length }}</p>
-
-<ul>
-{% set categoryPosts = collections.categorizedPosts[category] | reverse %}
-{% set postslist = categoryPosts %}
-{% for post in postslist %}
-  <li>
-    <a href="{{ post.url | url }}">{{ post.data.title }}</a>
-  </li>
+<ol>
+{% set categorylist = collections.categorizedPosts[ category ] %}
+{% for note in categorylist | reverse %}
+    <li>
+      {% if note.data.external %}
+        <a href="{{ note.data.url }}" target="_blank">{{ note.data.title }}</a>
+      {% else %}
+        <a href="{{ note.url }}">{{ note.data.title }}</a>
+      {% endif %}
+      <p>{{ note.data.description }}</p>
+    </li>
 {% endfor %}
-</ul>
-
-{% if collections.categorizedPosts[category].length > 10 %}
-  {% if pagination.href.next %}
-    <a href="{{ pagination.href.next }}">Next Page</a>
-  {% endif %}
-  {% if pagination.href.previous %}
-    <a href="{{ pagination.href.previous }}">Previous Page</a>
-  {% endif %}
-{% endif %}
+</ol>
