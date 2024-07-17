@@ -5,7 +5,7 @@ url: "https://qz.com/1010684"
 description: "I dove into the offerings of both Goop and Infowars and found many similarities."
 publication: "Quartz"
 medium: "investigation"
-category: ["journalism"]
+categories: ["journalism"]
 tags: ["health", "culture"]
 external: true
 ---

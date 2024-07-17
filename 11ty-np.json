@@ -1,0 +1,11 @@
+{
+  "editorCmd": "nvim",
+  "openAfterCreate": false,
+  "paragraphCount": 1,
+  "postsFolder": "src/notes",
+  "promptCategory": true,
+  "promptTargetFolder": false,
+  "promptTemplateFile": true,
+  "timeStamp": false,
+  "useYear": false
+}

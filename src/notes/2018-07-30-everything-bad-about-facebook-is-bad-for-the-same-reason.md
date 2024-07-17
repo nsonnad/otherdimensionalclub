@@ -5,5 +5,7 @@ url: "https://qz.com/1342757"
 description: "A philosophical analysis of Facebook's fundamental failing."
 publication: "Quartz"
 medium: "essay"
+categories: ["writing"]
+tags: ["evil", "technology", "arendt"]
 external: true
 ---

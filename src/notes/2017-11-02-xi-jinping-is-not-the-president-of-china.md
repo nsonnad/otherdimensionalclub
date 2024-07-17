@@ -5,7 +5,7 @@ url: "https://qz.com/1112638"
 description: "Linguistic-political analysis of a frequent mistranslation."
 publication: "Quartz"
 medium: "text"
-category: ["journalism"]
+categories: ["journalism"]
 tags: ["health", "culture"]
 external: true
 ---

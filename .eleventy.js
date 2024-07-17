@@ -13,8 +13,8 @@ module.exports = function (eleventyConfig) {
     collectionApi.getAll().filter(item => {
       return item.inputPath.endsWith('.md');
     }).forEach(function(item) {
-      if (item.data.category) {
-        item.data.category.forEach(category => categorySet.add(category));
+      if (item.data.categories) {
+        item.data.categories.forEach(category => categorySet.add(category));
       }
     });
     return Array.from(categorySet).sort();
@@ -23,8 +23,8 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addCollection("categorizedPosts", function (collectionApi) {
     let categorizedPosts = {};
     collectionApi.getAll().forEach(function (item) {
-      if (item.data.category) {
-        item.data.category.forEach((category) => {
+      if (item.data.categories) {
+        item.data.categories.forEach((category) => {
           if (!categorizedPosts[category]) {
             categorizedPosts[category] = [];
           }

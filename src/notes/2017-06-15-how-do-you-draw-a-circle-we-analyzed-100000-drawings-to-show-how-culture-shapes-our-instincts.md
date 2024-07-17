@@ -5,7 +5,7 @@ url: "https://qz.com/994486"
 description: "Dove into big Google data with Thu-Huong Ha to reveal a deep cultural preference."
 publication: "Quartz"
 medium: "Data journalism"
-category: ["code", "data", "journalism"]
+categories: ["code", "data", "journalism"]
 tags: ["language", "culture"]
 external: true
 ---

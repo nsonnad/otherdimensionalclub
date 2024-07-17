@@ -4,7 +4,7 @@ date: "2015-12-18"
 url: "https://qz.com/522079"
 description: "Reporting from Taiwan on an incredible design challenge."
 publication: "Quartz"
-category: ["writing", "journalism"]
+categories: ["writing", "journalism"]
 tags: ["design", "language", "chinese language"]
 medium: "reportage"
 external: true

@@ -5,7 +5,7 @@ url: "https://qz.com/india/964727"
 description: "Interview with Ganjam Venkatasubbaiah about his long life of studying Kannada."
 publication: "Quartz"
 medium: "profile"
-category: ["journalism", "writing"]
+categories: ["journalism", "writing"]
 tags: ["language", "india", "kannada"]
 external: true
 ---

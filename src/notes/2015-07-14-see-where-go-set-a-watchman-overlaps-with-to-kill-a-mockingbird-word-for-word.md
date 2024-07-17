@@ -5,7 +5,7 @@ url: "https://qz.com/452650"
 description: 'When Harper Lee''s "new" novel came out, Keith Collins and I wanted to know just how new it was.'
 publication: "Quartz"
 medium: "data analysis"
-category: ["journalism", "code"]
+categories: ["journalism", "code"]
 tags: ["data journalism", "literature"]
 external: true
 ---
