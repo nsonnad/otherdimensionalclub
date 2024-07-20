@@ -1,4 +1,5 @@
 module.exports = function (eleventyConfig) {
+  eleventyConfig.addPassthroughCopy("src/assets");
   // Create a collection of all notes
   eleventyConfig.addCollection("allNotes", function(collectionApi) {
     return collectionApi.getAll().filter(item => {

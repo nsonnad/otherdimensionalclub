@@ -1,29 +1,16 @@
 ---
+layout: default
 pagination:
   data: collections.allNotes
   size: 15
 ---
 
-<nav>
-  <ul>
-    {% for category in collections.categoryList %}
-      <li><a href="/{{ category | slug }}/">{{ category }}</a></li>
-    {% endfor %}
-  </ul>
-</nav>
-
-<ol>
-{%- for note in pagination.items %}
-    <li>
-      {% if note.data.external %}
-        <a href="{{ note.data.url }}" target="_blank">{{ note.data.title }}</a>
-      {% else %}
-        <a href="{{ note.url }}">{{ note.data.title }}</a>
-      {% endif %}
-      <p>{{ note.data.description }}</p>
-    </li>
-{% endfor -%}
-</ol>
+{% block content %}
+<div class="note-stream">
+  {%- for note in pagination.items %}
+    {% include "note-stream.njk" %}
+  {% endfor -%}
+</div>
 
 <nav aria-labelledby="my-pagination">
   <ol>
@@ -31,3 +18,5 @@ pagination:
     <li>{% if pagination.href.next %}<a href="{{ pagination.href.next }}">Next</a>{% else %}Next{% endif %}</li>
   </ol>
 </nav>
+{% endblock %}
+---
