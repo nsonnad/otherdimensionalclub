@@ -1,5 +1,24 @@
+const fs = require('fs');
+const path = require('path');
+
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/assets");
+
+  // Add a collection for the most recent notes
+  // Add a collection for the most recent notes by last modified date
+  eleventyConfig.addCollection('recentNotes', function(collectionApi) {
+    return collectionApi.getAll().filter(item => {
+      return item.inputPath.endsWith('.md');
+    })
+      .map(item => {
+        const filePath = path.join(__dirname, item.inputPath);
+        const stats = fs.statSync(filePath);
+        item.data.lastModified = stats.mtime;
+        return item;
+      })
+      .sort((a, b) => b.data.lastModified - a.data.lastModified)
+      .slice(0, 4);
+  });
   // Create a collection of all notes
   eleventyConfig.addCollection("allNotes", function(collectionApi) {
     return collectionApi.getAll().filter(item => {

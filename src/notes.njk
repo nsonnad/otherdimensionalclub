@@ -5,6 +5,8 @@ pagination:
   size: 15
 ---
 
+{% include "category-nav.njk" %}
+
 {% block content %}
 <div class="note-stream">
   {%- for note in pagination.items %}

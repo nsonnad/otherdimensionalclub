@@ -7,6 +7,8 @@ pagination:
 permalink: /{{ category | slugify }}/
 ---
 
+{% include "category-nav.njk" %}
+
 <div class="note-stream">
   {% set categorylist = collections.categorizedPosts[ category ] %}
     {% for note in categorylist | reverse %}

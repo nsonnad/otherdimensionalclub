@@ -7,18 +7,9 @@
 </head>
 <body>
   <header>
-    <h1>planet m</h1>
+  <h1 class="logo"><a href="/">planet m</a></h1>
   </header>
   <main>
-    <nav>
-      <ul class="category-nav">
-        <li class="category-all"><a href="/notes/">all</a></li>
-        {% for category in collections.categoryList %}
-          <li class="category-{{ category }}"><a href="/{{ category | slug }}/">{{ category }}</a></li>
-        {% endfor %}
-      </ul>
-    </nav>
-
     {{ content | safe }}
   </main>
 </body>

@@ -7,7 +7,7 @@
   <div class="note-content">
     <h2 class="note-title">
       {% if note.data.external %}
-        <a href="{{ note.data.url }}" target="_blank">{{ note.data.title }}</a>
+            <a href="{{ note.data.url }}" target="_blank">{{ note.data.title }} &#8599;</a> <!-- ASCII arrow pointing up and to the right -->
       {% else %}
         <a href="{{ note.url }}">{{ note.data.title }}</a>
       {% endif %}

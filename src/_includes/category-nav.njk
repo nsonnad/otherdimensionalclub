@@ -1,0 +1,8 @@
+<nav>
+  <ul class="category-nav">
+    <li class="category-all"><a href="/notes/">all</a></li>
+    {% for category in collections.categoryList %}
+      <li class="category-{{ category }}"><a href="/{{ category | slug }}/">{{ category }}</a></li>
+    {% endfor %}
+  </ul>
+</nav>

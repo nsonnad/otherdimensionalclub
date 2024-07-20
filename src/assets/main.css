@@ -37,6 +37,10 @@ a {
   color: inherit;
 }
 
+p {
+  margin: 10px 0;
+}
+
 /* Header styles */
 header {
   background-color: var(--accent-color);
@@ -51,6 +55,10 @@ header h1 {
     -1px 0 0 #3a3a3a, 5px 0.3vw 0 hsla(42, 86%, 63%, 0.7),
     10px 0.6vw 0 hsla(272, 91%, 65%, 0.7), 15px 0.9vw 0 hsla(355, 67%, 48%, 0.7),
     20px 1.2vw 0 hsla(176, 94%, 33%, 0.6);
+}
+
+header .logo a {
+  text-decoration: none;
 }
 
 /* Navigation styles */
@@ -71,7 +79,6 @@ header h1 {
 .category-nav li a {
   display: block;
   box-shadow: 2px 2px 0 #3d3d3d;
-
   padding: 0.5rem 1rem;
   color: #fff; /* Ensure text is visible */
   border: 1px solid black;
@@ -96,6 +103,10 @@ main {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+}
+
+.recent-notes {
+  margin-top: 10px;
 }
 
 .note {
@@ -129,7 +140,6 @@ main {
 
 .note-title a {
   font-size: 1.5rem;
-  color: var(--primary-color);
 }
 
 .note-description {

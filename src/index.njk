@@ -3,6 +3,22 @@ layout: default
 title: Home
 ---
 
-<h1>Welcome!</h1>
+<h1>Welcome to planet m~</h1>
+<p>
+hi! this is the site of nikhil sonnad (any pronouns). here you can look at the lots of different
+stuff i work on.
+</p>
+<p>
+this site serves as both a portfolio of my work and a place for me to share
+updates and thoughts, all represented by notes. browse by the categories below if you want to narrow
+them down, or just view all to see the most recent notes.
+</p>
 
-<a href="/notes">Notes</a>
+{% include "category-nav.njk" %}
+
+<h2>Recent changes</h2>
+<div class="recent-notes note-stream">
+  {% for note in collections.recentNotes %}
+    {% include "note-stream.njk" %}
+  {% endfor %}
+</div>
