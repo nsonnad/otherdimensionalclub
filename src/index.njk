@@ -3,10 +3,10 @@ layout: default
 title: Home
 ---
 
-<h1>Welcome~</h1>
+<div class="note-content">
 <p>
-hi! planet m is the site of nikhil sonnad (me) (any pronouns). here you can look at the lots of different
-stuff i work on.
+hi! this is planet, the site of nikhil sonnad (me) (any pronouns). here you can see all the different
+stuff i work on and make.
 </p>
 <p>
 this site serves as both a portfolio of my work and a place for me to share
@@ -14,9 +14,12 @@ updates and thoughts. browse by the categories below if you want to narrow
 things down, or view all to see everything i've been up to~
 </p>
 
+<p>thanks!</p>
+</div>
+
 {% include "category-nav.njk" %}
 
-<h2>Recent changes</h2>
+<h1>Recent changes</h1>
 <div class="recent-notes note-stream">
   {% for note in collections.recentNotes %}
     {% include "note-stream.njk" %}

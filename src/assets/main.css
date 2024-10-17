@@ -4,14 +4,18 @@
   --success-color: #07bc0c;
   --warning-color: #f1c40f;
   --accent-color: #bb86fc;
-  --accent-color-2: aquamarine;
-  --accent-color-3: #401f56;
+  --accent-color-2: #fb8072;
+  --accent-color-3: #8dd3c7;
   --accent-color-4: hsla(176, 95%, 26%, 1);
   --color-bg: hsla(317, 100%, 94%, 1);
   --color-bg-ligthened: hsla(317, 100%, 97%, 1);
   --color-logo: pink;
   --color-text: hsla(0, 0%, 18%, 1);
   --font-mono: monaco, Consolas, Lucida Console, monospace;
+  --box-box-shadow: 2px 2px 0 #3d3d3d;
+  --box-padding: 0.5rem 1rem;
+  --box-border: 1px solid black;
+  --box-bg: var(--color-bg-ligthened);
 }
 
 /* Minimal CSS reset */
@@ -33,6 +37,18 @@ body {
   line-height: 1.6;
 }
 
+img {
+  max-width: 100%;
+}
+
+ul {
+  padding-left: 2em;
+}
+
+li {
+  padding: 4px 0;
+}
+
 a {
   color: inherit;
 }
@@ -47,6 +63,8 @@ header {
   margin-left: 20%;
   color: var(--color-logo);
   padding: 1rem;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
 }
 
 header h1 {
@@ -78,17 +96,17 @@ header .logo a {
 
 .category-nav li a {
   display: block;
-  box-shadow: 2px 2px 0 #3d3d3d;
-  padding: 0.5rem 1rem;
   color: #fff; /* Ensure text is visible */
-  border: 1px solid black;
+  box-shadow: var(--box-box-shadow);
+  padding: var(--box-padding);
+  border: var(--box-border);
 }
 
 /* Responsive single column layout */
 main {
   max-width: 800px;
   margin: 0 auto;
-  padding: 1rem;
+  padding: 1rem 0;
 }
 
 @media (min-width: 768px) {
@@ -109,13 +127,13 @@ main {
   margin-top: 10px;
 }
 
-.note {
+.note-stream-item {
   display: flex;
   background-color: var(--color-bg-ligthened);
   padding: 16px 16px 16px 0;
   position: relative;
-  box-shadow: 2px 2px 0 #3d3d3d;
-  border: 1px solid #000;
+  box-shadow: var(--box-box-shadow);
+  border: var(--box-border);
   box-sizing: border-box;
 }
 
@@ -132,24 +150,42 @@ main {
   flex: 1; /* Each strip takes up equal space */
 }
 
-.note-title {
+.note-stream-title {
   margin-bottom: 10px;
   padding: 0;
-  line-height: 1em;
+  line-height: 1.2em;
 }
 
-.note-title a {
+.note-stream-title a {
   font-size: 1.5rem;
 }
 
-.note-description {
+.note-stream-description {
   font-size: 1rem;
   line-height: 1.2em;
   color: #666;
 }
 
-.note-content {
+.note-stream-content {
   flex: 1;
+}
+
+/* INDIVIDUAL NOTES */
+div.note-content {
+  background-color: var(--box-bg);
+  box-shadow: var(--box-box-shadow);
+  border: var(--box-border);
+  padding: var(--box-padding);
+  margin-bottom: 1rem;
+}
+
+div.note-content h1 {
+  line-height: 1.1em;
+  margin: 0.4em 0;
+}
+
+div.note-content h3 {
+  line-height: 2em;
 }
 
 /* Pagination styles */

@@ -5,7 +5,7 @@
   "scripts": {
     "build": "eleventy",
     "serve": "eleventy --serve",
-    "new": "11ty-np"
+    "new-post": "11ty-np"
   },
   "keywords": [],
   "author": "",

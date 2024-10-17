@@ -1,17 +1,17 @@
-<div class="note">
+<div class="note-stream-item">
   <div class="color-strips">
     {% for category in note.data.categories %}
       <div class="color-strip category-{{ category }}"></div>
     {% endfor %}
   </div>
-  <div class="note-content">
-    <h2 class="note-title">
+  <div class="note-stream-content">
+    <h2 class="note-stream-title">
       {% if note.data.external %}
             <a href="{{ note.data.url }}" target="_blank">{{ note.data.title }} &#8599;</a> <!-- ASCII arrow pointing up and to the right -->
       {% else %}
         <a href="{{ note.url }}">{{ note.data.title }}</a>
       {% endif %}
     </h2>
-    <p class="note-description">{{ note.data.description }}</p>
+    <p class="note-stream-description">{{ note.data.description }}</p>
   </div>
 </div>
