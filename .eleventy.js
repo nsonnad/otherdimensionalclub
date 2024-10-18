@@ -1,15 +1,15 @@
 const fs = require('fs');
 const path = require('path');
+const { EleventyRenderPlugin } = require("@11ty/eleventy");
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/assets");
+  eleventyConfig.addPlugin(EleventyRenderPlugin);
 
   // Add a collection for the most recent notes
   // Add a collection for the most recent notes by last modified date
   eleventyConfig.addCollection('recentNotes', function(collectionApi) {
-    return collectionApi.getAll().filter(item => {
-      return item.inputPath.endsWith('.md');
-    })
+    return collectionApi.getFilteredByGlob('src/notes/*.md')
       .map(item => {
         const filePath = path.join(__dirname, item.inputPath);
         const stats = fs.statSync(filePath);
@@ -19,30 +19,31 @@ module.exports = function (eleventyConfig) {
       .sort((a, b) => b.data.lastModified - a.data.lastModified)
       .slice(0, 4);
   });
+
   // Create a collection of all notes
   eleventyConfig.addCollection("allNotes", function(collectionApi) {
-    return collectionApi.getAll().filter(item => {
-      return item.inputPath.endsWith('.md');
-    }).sort((a, b) => {
-      return new Date(b.date) - new Date(a.date);
-    });
+    return collectionApi.getFilteredByGlob('src/notes/*.md')
+      .sort((a, b) => {
+        return new Date(b.date) - new Date(a.date);
+      });
   });
 
   eleventyConfig.addCollection("categoryList", function(collectionApi) {
     let categorySet = new Set();
-    collectionApi.getAll().filter(item => {
-      return item.inputPath.endsWith('.md');
-    }).forEach(function(item) {
-      if (item.data.categories) {
-        item.data.categories.forEach(category => categorySet.add(category));
-      }
-    });
+
+    collectionApi.getFilteredByGlob('src/notes/*.md')
+      .forEach(function(item) {
+        if (item.data.categories) {
+          item.data.categories.forEach(category => categorySet.add(category));
+        }
+      });
     return Array.from(categorySet).sort();
   });
 
   eleventyConfig.addCollection("categorizedPosts", function (collectionApi) {
     let categorizedPosts = {};
-    collectionApi.getAll().forEach(function (item) {
+
+    collectionApi.getFilteredByGlob('src/notes/*.md').forEach(function (item) {
       if (item.data.categories) {
         item.data.categories.forEach((category) => {
           if (!categorizedPosts[category]) {
