@@ -12,6 +12,16 @@
         <a href="{{ note.url }}">{{ note.data.title }}</a>
       {% endif %}
     </h2>
-    <p class="note-stream-description">{{ note.data.description }}</p>
+    <p class="note-stream-subtitle">
+      {% if note.data.medium %}
+        {{ note.data.medium | capitalizeFirst }}
+      {% endif %}
+      {% if note.data.publication %}
+        for {{ note.data.publication | capitalizeFirst }}
+      {% endif %}
+    </p>
+    {% if note.data.description %}
+      <p class="note-stream-description">{{ note.data.description }}</p>
+    {% endif %}
   </div>
 </div>

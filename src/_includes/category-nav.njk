@@ -1,8 +1,21 @@
 <nav>
   <ul class="category-nav">
-    <li class="category-all"><a href="/notes/">all</a></li>
-    {% for category in collections.categoryList %}
-      <li class="category-{{ category }}"><a href="/{{ category | slug }}/">{{ category }}</a></li>
+    <li class="category-all {% if category %}inactive{% else %}active{% endif %}">
+      <a href="/notes/">all</a>
+    </li>
+    {% for cat in collections.categoryList %}
+    <li class="category-{{ cat }}
+      {% if category == cat %}
+        active
+      {% elseif not category %}
+        active
+      {% else %}
+        inactive
+      {% endif %}"
+      >
+        <a href="/{{ cat | slug }}/">{{ cat }}</a>
+      </li>
     {% endfor %}
   </ul>
 </nav>
+

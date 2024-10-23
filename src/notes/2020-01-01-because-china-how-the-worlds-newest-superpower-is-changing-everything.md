@@ -6,6 +6,6 @@ description: "On-camera reporting for a video series on how China is reshaping t
 publication: "Quartz"
 categories: ["video", "journalism"]
 tags: ["reportage", "technology", "china"]
-medium: "video"
+medium: Video series
 external: true
 ---

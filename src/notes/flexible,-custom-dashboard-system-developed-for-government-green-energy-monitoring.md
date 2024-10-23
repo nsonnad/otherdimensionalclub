@@ -4,7 +4,8 @@ title: Flexible, custom dashboard system developed for government green energy
   monitoring
 date: 2024-10-17
 description:
-medium:
+medium: Freelance web and data project
+publication: Optimiser
 tags:
 external:
 categories:
@@ -16,10 +17,7 @@ categories:
 
 I designed and developed a fully custom, interactive, and highly flexible dashboard system in JavaScript, using D3.js and vega-lite. I worked closely with Optimiser to design dashboards that give users the data and insights they needed as clearly as possible, and to develop a system that is customizable, responsive, and future-proof.
 
-<figure>
-    <img src="/assets/img/focus-dashboard-1.png" alt="Dashboard sample" />
-    <figcaption>Screenshot of the "Overview" dashboard page.</figcaption>
-</figure>
+{% clickableImage "2024/focus-overview.png" "Screenshot of the Overview dashboard page" "Screenshot of the Overview dashboard page" %}
 
 ### Outcome
 
@@ -35,3 +33,17 @@ I designed and developed a fully custom, interactive, and highly flexible dashbo
   - Dynamic URLs that capture the current state of dashboard filters and settings, allowing users to share specific views
   - Export current view of data or raw data as CSV for further analysis
   - Export charts as images
+
+### In action
+
+#### Page that helps identify high-usage buildings
+
+{% clickableImage "2024/focus-buildings.png" "Buildings to target page" %}
+
+#### Animation showing instantaneous data filtering and redrawing
+
+{% clickableImage "2024/focus-animation-1.gif" "Realtime data manipulation" %}
+
+#### Pivot table that aggregates data on-the-fly
+
+{% clickableImage "2024/focus-table.gif" "Buildings to target page" %}

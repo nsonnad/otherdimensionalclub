@@ -12,7 +12,7 @@ title: Home
 
 <h2>Recent updates</h2>
 <div class="recent-notes note-stream">
-  {% for note in collections.recentNotes %}
+  {% for note in collections.allNotes.slice(0, 5) %}
     {% include "note-stream.njk" %}
   {% endfor %}
 </div>

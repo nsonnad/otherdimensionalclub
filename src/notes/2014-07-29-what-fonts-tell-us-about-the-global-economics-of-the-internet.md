@@ -4,7 +4,7 @@ date: "2014-07-29"
 url: "https://qz.com/237851"
 description: "Design-as-development."
 publication: "Quartz"
-medium: "text"
+medium: Published writing
 categories: ["writing"]
 tags: ["design", "internet"]
 external: true

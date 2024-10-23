@@ -8,17 +8,17 @@ module.exports = function (eleventyConfig) {
 
   // Add a collection for the most recent notes
   // Add a collection for the most recent notes by last modified date
-  eleventyConfig.addCollection('recentNotes', function(collectionApi) {
-    return collectionApi.getFilteredByGlob('src/notes/*.md')
-      .map(item => {
-        const filePath = path.join(__dirname, item.inputPath);
-        const stats = fs.statSync(filePath);
-        item.data.lastModified = stats.mtime;
-        return item;
-      })
-      .sort((a, b) => b.data.lastModified - a.data.lastModified)
-      .slice(0, 4);
-  });
+  //eleventyConfig.addCollection('recentNotes', function(collectionApi) {
+    //return collectionApi.getFilteredByGlob('src/notes/*.md')
+      //.map(item => {
+        //const filePath = path.join(__dirname, item.inputPath);
+        //const stats = fs.statSync(filePath);
+        //item.data.lastModified = stats.mtime;
+        //return item;
+      //})
+      //.sort((a, b) => b.data.lastModified - a.data.lastModified)
+      //.slice(0, 4);
+  //});
 
   // Create a collection of all notes
   eleventyConfig.addCollection("allNotes", function(collectionApi) {
@@ -60,6 +60,30 @@ module.exports = function (eleventyConfig) {
     }
 
     return categorizedPosts;
+  });
+
+  eleventyConfig.addFilter("capitalizeFirst", function(str) {
+    if (!str) return '';
+    return str.charAt(0).toUpperCase() + str.slice(1);
+  });
+
+  eleventyConfig.addFilter("readableDate", (dateObj) => {
+    return new Date(dateObj).toLocaleDateString("en-US", {
+      year: "numeric",
+      month: "short",
+      day: "numeric",
+    });
+  });
+
+  eleventyConfig.addShortcode("clickableImage", function(src, alt, title) {
+    return `
+      <figure>
+        <a href="/assets/img/${src}" target="_blank">
+          <img src="/assets/img/${src}" alt="${alt}" title="${alt}" class="clickable-image">
+        </a>
+        ${title ? `<figcaption>${title}</figcaption>` : ""}
+      </figure>
+    `;
   });
 
   return {
