@@ -15,6 +15,14 @@ Contact: <a href="mailto:nikhil@nsnnd.com">nikhil@nsnnd.com</a>
 
 ### Work experience
 
+#### Optimiser
+
+##### Data visiualization and dashboard engineer, 2023-2024
+
+➔ OptiMiser, an energy data analysis and software company, came to me looking to replace a set of legacy Tableau dashboards with a custom, in-house solution.
+
+➔ Within a year, I successfully improved on Tableau, creating a custom JavaScript dashboard system that is flexible, versatile, and customizable, far more performant than Tableau, and much better oriented to the needs of Optimiser's users. (See more in the [write-up](/notes/flexible,-custom-dashboard-system-developed-for-government-green-energy-monitoring/).)
+
 #### City University New York
 
 ##### Adjunct Instructor in Data Journalism, 2021-2023
