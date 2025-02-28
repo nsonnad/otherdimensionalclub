@@ -15,9 +15,17 @@ Contact: <a href="mailto:nikhil@nsnnd.com">nikhil@nsnnd.com</a>
 
 ### Work experience
 
+#### University of Minnesota Hubbard School of Journalism
+
+##### Fellow, 2023-2025
+
+➔ Provide advice for U of M journalism school instructors on approaches to teaching data journalism concepts to their undergrads.
+
+➔ Give guest lectures twice a month teaching data journalism basics—like using Excel, how to think about using data to find stories, and thinking critically about data—to undergrads.
+
 #### Optimiser
 
-##### Data visiualization and dashboard engineer, 2023-2024
+##### Data visualization and dashboard engineer, 2023-2024
 
 ➔ OptiMiser, an energy data analysis and software company, came to me looking to replace a set of legacy Tableau dashboards with a custom, in-house solution.
 
