@@ -25,7 +25,7 @@ Contact: <a href="mailto:nikhil@nsnnd.com">nikhil@nsnnd.com</a>
 
 #### Optimiser
 
-##### Data visualization and dashboard engineer, 2023-2024
+##### Data visualization and dashboard engineer, 2023-2025
 
 ➔ OptiMiser, an energy data analysis and software company, came to me looking to replace a set of legacy Tableau dashboards with a custom, in-house solution.
 
