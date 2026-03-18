@@ -15,6 +15,14 @@ Contact: <a href="mailto:nikhil@nsnnd.com">nikhil@nsnnd.com</a>
 
 ### Work experience
 
+#### Texas Tribune
+
+##### Contractor for election results page
+
+➔ Set up, managed, and ran the Texas Tribune's election data pipeline and results page for the 2026 primaries.
+
+➔ The whole thing went off without a hitch, pulling in and presenting live data from the Associated Press. (See more in the [write-up](/notes/texas-tribune-election-results-page/).)
+
 #### University of Minnesota Hubbard School of Journalism
 
 ##### Fellow, 2023-2025

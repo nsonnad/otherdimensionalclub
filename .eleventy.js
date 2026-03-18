@@ -1,10 +1,12 @@
-const fs = require('fs');
-const path = require('path');
-const { EleventyRenderPlugin } = require("@11ty/eleventy");
+import UpgradeHelper from "@11ty/eleventy-upgrade-help";
 
-module.exports = function (eleventyConfig) {
+import { EleventyRenderPlugin } from "@11ty/eleventy";
+
+export default function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/assets");
   eleventyConfig.addPlugin(EleventyRenderPlugin);
+
+  eleventyConfig.addPlugin(UpgradeHelper)
 
   // Add a collection for the most recent notes
   // Add a collection for the most recent notes by last modified date

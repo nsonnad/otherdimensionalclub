@@ -253,6 +253,11 @@ main {
   flex: 1;
 }
 
+.more-notes {
+  text-align: right;
+  margin-top: 6px;
+}
+
 /* INDIVIDUAL NOTES */
 div.note-content {
   background-color: var(--box-bg);
