@@ -2,6 +2,7 @@
   "name": "nikhilsworld",
   "version": "1.0.0",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "build": "eleventy",
     "serve": "eleventy --serve",
