@@ -1,8 +1,8 @@
-import { EleventyRenderPlugin } from "@11ty/eleventy";
+import { RenderPlugin } from "@11ty/eleventy";
 
 export default function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/assets");
-  eleventyConfig.addPlugin(EleventyRenderPlugin);
+  eleventyConfig.addPlugin(RenderPlugin);
 
   // Add a collection for the most recent notes
   // Add a collection for the most recent notes by last modified date
