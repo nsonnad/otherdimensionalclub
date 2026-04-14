@@ -18,6 +18,7 @@
     Arial, sans-serif;
   --box-box-shadow: 2px 2px 0 #3d3d3d;
   --box-padding: 0.8rem 1.6rem;
+  --box-padding-half: 0.4rem 0.8rem;
   --box-border: 1px solid gray;
   --box-bg: var(--color-bg-lightened);
 }
@@ -80,12 +81,12 @@ p {
 }
 
 h2 {
-  margin: 0.5rem 0;
+  margin: 1rem 0;
 }
 
 /* Header styles */
 header {
-  margin: 1rem 0 1.6rem 0;
+  margin: 1rem 0 2rem 0;
   color: var(--color-logo);
 }
 
@@ -106,6 +107,11 @@ header h1 {
 
 header .logo a {
   text-decoration: none;
+}
+
+.khila {
+  color: var(--accent-color);
+  font-weight: bold;
 }
 
 /* Navigation styles */
@@ -141,6 +147,28 @@ nav {
   padding: var(--box-padding);
   border: 1px solid black;
   box-shadow: var(--box-box-shadow);
+}
+
+.buttondown-form {
+  margin-top: 1rem;
+}
+
+.buttondown-form input, button {
+  /* Ensure text is visible */
+  padding: var(--box-padding);
+  border: 1px solid black;
+  box-shadow: var(--box-box-shadow);
+  font-size: 1rem;
+  font-family: var(--font-mono);
+}
+
+.buttondown-form button {
+  font-weight: bold;
+  /* background: linear-gradient(-45deg, hsl(165 80% 70%), hsl(313 53.8% 64.9%)); */
+  background: linear-gradient(-45deg, var(--accent-color-3), var(--accent-color));
+  text-decoration: underline;
+  cursor: pointer;
+  color: #fff;
 }
 
 .note-category-tags {
@@ -188,7 +216,7 @@ main {
   }
 
   header {
-    margin: 1rem 0 1.6rem 20%;
+    margin: 1rem 0 2rem 20%;
   }
 }
 

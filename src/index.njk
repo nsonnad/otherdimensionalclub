@@ -7,10 +7,10 @@ title: Home
   {% renderFile "./src/_includes/content/index.md" %}
 </div>
 
-<h2>Categories</h2>
+<h2>categories</h2>
 {% include "category-nav.njk" %}
 
-<h2>Recent updates</h2>
+<h2>recent updates</h2>
 <div class="recent-notes note-stream">
   {% for note in collections.allNotes.slice(0, 8) %}
     {% include "note-stream.njk" %}
