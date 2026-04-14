@@ -1,7 +1,7 @@
 ---
 title: "This free online encyclopedia has achieved what Wikipedia can only dream of"
 date: "2015-09-21"
-url: "https://qz.com/480741"
+url: "https://qz.com/480741/this-free-online-encyclopedia-has-achieved-what-wikipedia-can-only-dream-of"
 description: "The genius of the _Stanford Encyclopedia of Philosophy_."
 publication: "Quartz"
 medium: Published writing
