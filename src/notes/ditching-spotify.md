@@ -7,8 +7,8 @@ medium:
 tags:
 external:
 categories:
-  - music
   - writing
+  - music
 ---
 
 it is time to once and for all to ditch spofity. fortunately i have been preparing for this moment.

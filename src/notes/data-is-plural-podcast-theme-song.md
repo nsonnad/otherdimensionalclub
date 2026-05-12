@@ -8,8 +8,8 @@ publication: Data is Plural
 tags:
 external: false
 categories:
-  - data
   - music
+  - data
 ---
 
 I composed the theme song for the [Data is Plural podcast](https://podcast.data-is-plural.com/)! It's a funky little groove. Have a listen wherever you get podcasts.

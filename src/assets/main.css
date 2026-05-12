@@ -143,10 +143,15 @@ nav {
 .category-nav li a {
   display: block;
   color: #fff;
+  text-decoration: none;
   /* Ensure text is visible */
   padding: var(--box-padding);
   border: 1px solid black;
   box-shadow: var(--box-box-shadow);
+}
+
+.category-nav li a:hover {
+  text-decoration: underline;
 }
 
 .buttondown-form {
@@ -166,7 +171,7 @@ nav {
   font-weight: bold;
   /* background: linear-gradient(-45deg, hsl(165 80% 70%), hsl(313 53.8% 64.9%)); */
   background: linear-gradient(-45deg, var(--accent-color-3), var(--accent-color));
-  text-decoration: underline;
+  text-decoration: none;
   cursor: pointer;
   color: #fff;
 }
@@ -342,6 +347,30 @@ nav[aria-labelledby="my-pagination"] a {
 
 .category-writing {
   background-color: var(--accent-color-3);
+}
+
+.note-stream-item-code {
+  border: 1px solid var(--primary-color);
+}
+
+.note-stream-item-data {
+  border: 1px solid var(--success-color);
+}
+
+.note-stream-item-journalism {
+  border: 1px solid var(--warning-color);
+}
+
+.note-stream-item-music {
+  border: 1px solid var(--accent-color);
+}
+
+.note-stream-item-video {
+  border: 1px solid var(--accent-color-2);
+}
+
+.note-stream-item-writing {
+  border: 1px solid var(--accent-color-3);
 }
 
 /* Category Colors */
