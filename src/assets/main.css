@@ -286,6 +286,10 @@ main {
   flex: 1;
 }
 
+audio {
+width: 100%;
+}
+
 .more-notes {
   text-align: right;
   margin-top: 6px;

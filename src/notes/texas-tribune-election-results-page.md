@@ -4,6 +4,7 @@ title: Texas Tribune election results page
 date: 2026-03-18
 description: 
 medium: Django/Javascript data pipeline
+image: 2026/tribune-elections-1.png
 tags: 
 external: 
 categories:

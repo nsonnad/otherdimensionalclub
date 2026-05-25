@@ -6,6 +6,7 @@ date: 2024-10-17
 description:
 medium: Freelance web and data project
 publication: Optimiser
+image: 2024/focus-overview.png
 tags:
 external:
 categories:

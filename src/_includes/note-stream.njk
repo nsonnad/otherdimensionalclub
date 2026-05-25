@@ -1,27 +1,36 @@
 <div class="note-stream-item note-stream-item-{{ note.data.categories[0] }}">
   <div class="color-strips">
-    {% for category in note.data.categories %}
-      <div class="color-strip category-{{ category }}"></div>
-    {% endfor %}
+    {% for category in note.data.categories %}<div class="color-strip category-{{ category }}"></div>{% endfor %}
   </div>
   <div class="note-stream-content">
     <h2 class="note-stream-title">
       {% if note.data.external %}
-            <a href="{{ note.data.url }}" target="_blank">{{ note.data.title }} &#8599;</a> <!-- ASCII arrow pointing up and to the right -->
+        <a href="{{ note.data.url }}" target="_blank">{{ note.data.title }} &#8599;</a> <!-- ASCII arrow pointing up and to the right -->
       {% else %}
         <a href="{{ note.url }}">{{ note.data.title }}</a>
       {% endif %}
     </h2>
     <p class="note-stream-subtitle">
-      {% if note.data.medium %}
-        {{ note.data.medium | capitalizeFirst }}
-      {% endif %}
-      {% if note.data.publication %}
-        for {{ note.data.publication | capitalizeFirst }}
-      {% endif %}
+      {% if note.data.medium %}{{ note.data.medium | capitalizeFirst }}{% endif %}
+      {% if note.data.publication %}for {{ note.data.publication | capitalizeFirst }}{% endif %}
     </p>
-    {% if note.data.description %}
-      <p class="note-stream-description">{{ note.data.description }}</p>
-    {% endif %}
+    {% if note.data.description %}<p class="note-stream-description">{{ note.data.description }}</p>{% endif %}
+    {% if note.data.image %}
+      <figure>
+        {% if note.data.external %}
+          <a href="{{ note.data.url }}" target="_blank">
+          {% else %}
+            <a href="{{ note.url }}">
+            {% endif %}
+            <img src="/assets/img/{{ note.data.image }}"
+                 alt="{{ note.data.imageAltText }}" />
+          </a>
+        </figure>
+      {% endif %}
+      {% if note.data.audio %}
+      <audio controls>
+        <source src="/assets/audio/{{note.data.audio}}" type="audio/mpeg">
+      </audio>
+      {% endif %}
+    </div>
   </div>
-</div>
