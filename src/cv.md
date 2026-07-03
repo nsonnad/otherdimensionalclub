@@ -29,7 +29,7 @@ Contact: <a href="mailto:nikhil@nsnnd.com">nikhil@nsnnd.com</a>
 
 ➔ Provide advice for U of M journalism school instructors on approaches to teaching data journalism concepts to their undergrads.
 
-➔ Give guest lectures twice a month teaching data journalism basics—like using Excel, how to think about using data to find stories, and thinking critically about data—to undergrads.
+➔ Give guest lectures twice a semester teaching data journalism basics—like using Excel, how to think about using data to find stories, and thinking critically about data—to undergrads.
 
 #### Optimiser
 
