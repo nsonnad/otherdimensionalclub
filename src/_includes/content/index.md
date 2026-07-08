@@ -9,3 +9,5 @@ Subscribe to the otherdimensional club newsletter! It's the best way to stay up 
 
 {% include "buttondown-form.njk" %}
 
+
+You can also write me at: _*hi \[at\] otherdimensional \[dot\] club*_
